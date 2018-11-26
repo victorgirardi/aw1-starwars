@@ -1,17 +1,19 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>How to Watch?</title>
+    <title>Empire X Rebels</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/empirerebel.css">
+    <script src="../js/empirerebel.js"></script>
   </head>
   <body>
     
-    <body>
+    <body onload="toggleLanguage()">
         <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
           <a class="navbar-brand" href="../index.html">
             <img src="../img/starwars.png" height="40px">
@@ -30,14 +32,115 @@
               <!--Adicionar href-->
               <li class="nav-item"><a class="nav-link mx-4" href="../html/starships.html">Starships</a></li>
               <!--Adicionar href-->
-              <li class="nav-item"><a class="nav-link mx-4" href="../index.html">Index</a></li>
+              <li class="nav-item"><a class="nav-link mx-4" href="../index.html">Home</a></li>
               <!--Adicionar href-->
               <li class="nav-item"><a class="nav-link mx-4" href="../html/howtowatch.html">How to Watch?</a></li>
               <!--Adicionar href-->
             </ul>
+            <span class="navbar-text float-right">
+                <button class="btn" style="background-color:transparent" onclick="toggleLanguage()">
+                    <img src="../img/chewie.png" width="50px">
+                </button>
+              </span>
           </div>
         </nav>
 
+        <div class="container mt-5 px-0 mx-auto text-center">
+            <h5 class="w-75 text-justify text-warning font-weight-bold my-5 mx-auto" style="line-height: 1.5em">Empire</h5>
+          </div>
+          
+               <!--Empire-->
+            <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
+              <div class="row">
+                <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/EmpireRebels/boba.jpeg"></div>
+                <div class="col-lg">
+                  <div class="card-body  pt-5">
+                    <h1 class="card-title text-light" id="Boba"></h1>
+                    <p class="card-text text-light">Former apprentice of Count Dooku and tutor of Obi-Wan Kenobi, 
+                        Qui-Gon was a Jedi Master who didn't quite followed the Jedi Code as well as the orders of the Jedi Council,
+                         in order to follow the will of the Force. In addition, throught his studies of the Living Force,
+                          he learnt the secret of eternal consciousness.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
+                <div class="row">
+                  <div class="col-lg">
+                    <div class="card-body  pt-6">
+                      <h1 class="card-title text-light" id="Jabba"></h1>
+                      <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
+                        purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/EmpireRebels/jabba.jpg"></div>
+                </div>
+              </div>
+          
+            <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
+                <div class="row">
+                  <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/EmpireRebels/jar.png"></div>
+                  <div class="col-lg">
+                    <div class="card-body pt-6">
+                      <h1 class="card-title text-light" id="Jar"></h1>
+                      <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
+                        purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            
+          
+              <div class="container mt-5 px-0 mx-auto text-center">
+                  <h5 class="w-75 text-justify text-warning font-weight-bold my-5 mx-auto" style="line-height: 1.5em">Rebels</h5>
+                </div>
+          
+              <!--Rebels-->
+              <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-primary">
+                  <div class="row">
+                    <div class="col-lg">
+                      <div class="card-body  pt-6">
+                        <h1 class="card-title text-light" id="Lando"></h1>
+                        <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
+                          purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/EmpireRebels/lando.jpg"></div>
+                  </div>
+                </div>
+
+                <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-primary">
+                    <div class="row">
+                      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/EmpireRebels/han.jpeg"></div>
+                      <div class="col-lg">
+                        <div class="card-body  pt-7">
+                          <h1 class="card-title text-light" id="Han"></h1>
+                          <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
+                            purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+
+                <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-primary">
+                    <div class="row">
+                      <div class="col-lg">
+                        <div class="card-body  pt-6">
+                          <h1 class="card-title text-light" id="Leia"></h1>
+                          <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
+                            purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/EmpireRebels/leia.jpg"></div>
+                    </div>
+                  </div>
+              
+                
+              
+          
 
     <footer class="page-footer font-small bg-dark">
         <div class="footer-copyright text-center py-3 text-light">Produzido por: 
