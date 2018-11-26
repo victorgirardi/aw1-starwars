@@ -13,7 +13,7 @@
     <script src="../js/sithjedi.js"></script>
 </head>
 
-<body>
+<body onload="toggleLanguage()">
 
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
         <a class="navbar-brand" href="../index.html">
@@ -38,7 +38,13 @@
                 <!--Adicionar href-->
                 <li class="nav-item"><a class="nav-link mx-4" href="../html/empirerebel.html">Empire x Rebels</a></li>
                 <!--Adicionar href-->
+                
             </ul>
+            <span class="navbar-text float-right">
+              <button class="btn" style="background-color:transparent" onclick="toggleLanguage()">
+                  <img src="../img/chewie.png" width="50px">
+              </button>
+            </span>
         </div>
     </nav>
 <!--Just testing (Without ideas for it)-->
@@ -52,7 +58,7 @@
       <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/qui-gon.jpg"></div>
       <div class="col-lg">
         <div class="card-body  pt-7">
-          <h1 class="card-title text-light" id="Qui">Qui-Gon Jinn</h1>
+          <h1 class="card-title text-light" id="Qui"></h1>
           <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
             purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
         </div>
@@ -64,7 +70,7 @@
       <div class="row">
         <div class="col-lg">
           <div class="card-body  pt-6">
-            <h1 class="card-title text-light">Obi-Wan Kenobi</h1>
+            <h1 class="card-title text-light" id="Obi"></h1>
             <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
               purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
           </div>
@@ -78,7 +84,7 @@
         <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/anakin.png"></div>
         <div class="col-lg">
           <div class="card-body pt-8">
-            <h1 class="card-title text-light">Anakin Skywalker</h1>
+            <h1 class="card-title text-light" id="Anakin"></h1>
             <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
               purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
           </div>
@@ -90,7 +96,7 @@
       <div class="row">
         <div class="col-lg">
           <div class="card-body  pt-10">
-            <h1 class="card-title text-light">Luke Skywalker</h1>
+            <h1 class="card-title text-light" id="Luke"></h1>
             <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
               purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
           </div>
@@ -104,7 +110,7 @@
         <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/yoda.jpg"></div>
         <div class="col-lg">
           <div class="card-body  pt-8">
-            <h1 class="card-title text-light">Yoda</h1>
+            <h1 class="card-title text-light" id="Yoda"></h1>
             <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
               purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
           </div>
@@ -122,7 +128,7 @@
         <div class="row">
           <div class="col-lg">
             <div class="card-body  pt-9">
-              <h1 class="card-title text-light">Darth Maul</h1>
+              <h1 class="card-title text-light" id="Maul"></h1>
               <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
                 purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
             </div>
@@ -136,7 +142,7 @@
           <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/dooku.jpeg"></div>
           <div class="col-lg">
             <div class="card-body  pt-6">
-              <h1 class="card-title text-light">Dooku</h1>
+              <h1 class="card-title text-light" id="Dooku"></h1>
               <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
                 purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
             </div>
@@ -148,7 +154,7 @@
         <div class="row">
           <div class="col-lg">
             <div class="card-body  pt-8">
-              <h1 class="card-title text-light">Sheev Palpatine (Darth Sidious)</h1>
+              <h1 class="card-title text-light" id="Palpatine"></h1>
               <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
                 purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
             </div>
@@ -162,7 +168,7 @@
           <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/vader.jpg"></div>
           <div class="col-lg">
             <div class="card-body pt-6 ">
-              <h1 class="card-title text-light">Darth Vader</h1>
+              <h1 class="card-title text-light" id="Vader"></h1>
               <p class="card-text text-light">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium
                 purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus.</p>
             </div>
