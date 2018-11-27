@@ -5,7 +5,6 @@ function startPage(){
 }
 
 function toggleLanguageSithJedi(){
-    console.log('toggle')
     wookiee = !wookiee;
     nameSWAPI('Qui');
     nameSWAPI('Obi');
@@ -18,11 +17,24 @@ function toggleLanguageSithJedi(){
     nameSWAPI('Vader');
 }
 
+function toggleLanguageRebels(){
+    wookiee = !wookiee;
+    nameSWAPI('R2');
+    nameSWAPI('C-3');
+    nameSWAPI('BB8');
+    nameSWAPI('Poe');
+    nameSWAPI('Lando');
+    nameSWAPI('Leia');
+    nameSWAPI('Han');
+    nameSWAPI('Chew');
+}
+
 function nameSWAPI(id) {
     var request = new XMLHttpRequest();
     var swapi = 'https://swapi.co/api/people/';
     var thisSwapi = swapi + '?search=' + id;
     if (wookiee) {
+        console.log('wookiee')
         thisSwapi += '&format=wookiee'
         request.open('GET', thisSwapi, true);
         request.onload = function () {
@@ -33,7 +45,7 @@ function nameSWAPI(id) {
         request.send();
 
     } else {
-        
+        console.log('Human')
         fetch(thisSwapi).then((obj) => {
             return obj.json();
         }).then((obj) => {
