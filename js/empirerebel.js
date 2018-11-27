@@ -3,12 +3,14 @@ var wookiee = true;
 function toggleLanguage(){
     console.log('toggle')
     wookiee = !wookiee;
-    nameSWAPI('Boba');
-    nameSWAPI('Jabba');
-    nameSWAPI('Jar');
+    nameSWAPI('Poe');
+    nameSWAPI('BB8');
+    nameSWAPI('R2');
     nameSWAPI('Leia');
     nameSWAPI('Han');
     nameSWAPI('Lando');
+    nameSWAPI('Chew');
+    nameSWAPI('C-3');
 }
 
 function nameSWAPI(id) {
