@@ -2,211 +2,225 @@
 <html lang="en">
 
 <head>
-    <title>Jedi & Sith</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jedi & Sith</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/jediSith.css">
-    <link rel="icon" href="../img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/jediSith.css">
+  <link rel="icon" href="../img/favicon.png">
 </head>
 
 <body onload="startPage(); toggleLanguageSithJedi()">
 
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-        <a class="navbar-brand" href="../index.html">
-            <img src="../img/starwars.png" height="40px">
-        </a>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../img/starwars.png" height="40px">
+    </a>
 
-        <!--Sandwich Bar-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!--Sandwich Bar-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarDropdown">
+      <ul class="navbar-nav">
+        <!--Adicionar href-->
+        <li class="nav-item"><a class="nav-link mx-4" href="../html/planets.html">Planets</a></li>
+        <!--Adicionar href-->
+        <li class="nav-item"><a class="nav-link mx-4" href="../html/starships.html">Starships</a></li>
+        <!--Adicionar href-->
+        <li class="nav-item"><a class="nav-link mx-4" href="../html/howtowatch.html">How to Watch?</a></li>
+        <!--Adicionar href-->
+        <li class="nav-item"><a class="nav-link mx-4" href="../html/empirerebel.html">Empire x Rebels</a></li>
+        <!--Adicionar href-->
+
+      </ul>
+      <span class="navbar-text float-right">
+        <button class="btn" style="background-color:transparent" onclick="toggleLanguageSithJedi()">
+          <img src="../img/chewie.png" width="50px">
         </button>
+      </span>
+    </div>
 
-        <div class="collapse navbar-collapse" id="navbarDropdown">
-            <ul class="navbar-nav">
-                <!--Adicionar href-->
-                <li class="nav-item"><a class="nav-link mx-4" href="../html/planets.html">Planets</a></li>
-                <!--Adicionar href-->
-                <li class="nav-item"><a class="nav-link mx-4" href="../html/starships.html">Starships</a></li>
-                <!--Adicionar href-->
-                <li class="nav-item"><a class="nav-link mx-4" href="../html/howtowatch.html">How to Watch?</a></li>
-                <!--Adicionar href-->
-                <li class="nav-item"><a class="nav-link mx-4" href="../html/empirerebel.html">Empire x Rebels</a></li>
-                <!--Adicionar href-->
-                
-            </ul>
-            
-        </div>
-        <span class="navbar-text float-right">
-            <button class="btn" style="background-color:transparent" onclick="toggleLanguageSithJedi()">
-                <img src="../img/chewie.png" width="50px">
-            </button>
-          </span>
-    </nav>
-<!--Just testing (Without ideas for it)-->
-<div class="container mt-5 px-0 mx-auto text-center">
-  <h5 class="w-75 text-justify text-warning font-weight-bold my-5 mx-auto" style="line-height: 1.5em">Known as protectors of peace,
-     the Jedi are a class of warriors that adhered a doctrine which favored the light side of the Force. The most iconic/powerful Jedi are:</h5>
-</div>
+  </nav>
+  <!--Just testing (Without ideas for it)-->
+  <div class="container mt-5 px-0 mx-auto text-center">
+    <h5 class="w-75 text-justify text-warning font-weight-bold my-5 mx-auto" style="line-height: 1.5em">Known as
+      protectors of peace,
+      the Jedi are a class of warriors that adhered a doctrine which favored the light side of the Force. The most
+      iconic/powerful Jedi are:</h5>
+  </div>
 
-     <!--Jedi-->
+  <!--Jedi-->
   <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-success">
     <div class="row">
       <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/qui-gon.jpg"></div>
       <div class="col-lg">
         <div class="card-body  pt-7">
           <h1 class="card-title text-light" id="Qui"></h1>
-          <p class="card-text text-light">Former apprentice of Dooku and tutor of Obi-Wan Kenobi, 
-              Qui-Gon was a Jedi Master who didn't quite followed the Jedi Code as well as the orders of the Jedi Council,
-               in order to follow the will of the Force. In addition, throught his studies of the Living Force,
-                he learnt the secret of eternal consciousness.</p>
+          <p class="card-text text-light">Former apprentice of Dooku and tutor of Obi-Wan Kenobi,
+            Qui-Gon was a Jedi Master who didn't quite followed the Jedi Code as well as the orders of the Jedi
+            Council,
+            in order to follow the will of the Force. In addition, throught his studies of the Living Force,
+            he learnt the secret of eternal consciousness.</p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-primary">
-      <div class="row">
-        <div class="col-lg">
-          <div class="card-body  pt-6">
-            <h1 class="card-title text-light" id="Obi"></h1>
-            <p class="card-text text-light">Former apprentice of Qui-Gon Jin and mentor of both Anakin Skywalker and Luke Skywalker,
-              Obi-Wan was a Jedi that fought at the Clone Wars (he was made a Jedi Master and member of the Jedi Council at this period) 
-              as well as the first Jedi in a millennium to defeat a Sith Lord.
-            </p>
-          </div>
+    <div class="row">
+      <div class="col-lg">
+        <div class="card-body  pt-6">
+          <h1 class="card-title text-light" id="Obi"></h1>
+          <p class="card-text text-light">Former apprentice of Qui-Gon Jin and mentor of both Anakin Skywalker and Luke
+            Skywalker,
+            Obi-Wan was a Jedi that fought at the Clone Wars (he was made a Jedi Master and member of the Jedi Council
+            at this period)
+            as well as the first Jedi in a millennium to defeat a Sith Lord.
+          </p>
         </div>
-        <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/obi-wan.jpg"></div>
       </div>
+      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/obi-wan.jpg"></div>
     </div>
+  </div>
 
   <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-primary">
-      <div class="row">
-        <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/anakin.png"></div>
-        <div class="col-lg">
-          <div class="card-body pt-8">
-            <h1 class="card-title text-light" id="Anakin"></h1>
-            <p class="card-text text-light">Former apprentice of Obi-Wan Kenobi, Anakin Skywalker was a Jedi Knight 
-              who fought at the Clone Wars and considered the Chosen One (he would bring balance to the Force). 
-              However, at the ending of the Clone Wars, he turned himself to the dark side of the Force, to be known by the name of Darth Vader. </p>
-          </div>
+    <div class="row">
+      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/anakin.png"></div>
+      <div class="col-lg">
+        <div class="card-body pt-8">
+          <h1 class="card-title text-light" id="Anakin"></h1>
+          <p class="card-text text-light">Former apprentice of Obi-Wan Kenobi, Anakin Skywalker was a Jedi Knight
+            who fought at the Clone Wars and considered the Chosen One (he would bring balance to the Force).
+            However, at the ending of the Clone Wars, he turned himself to the dark side of the Force, to be known by
+            the name of Darth Vader. </p>
         </div>
       </div>
     </div>
+  </div>
 
   <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-success">
-      <div class="row">
-        <div class="col-lg">
-          <div class="card-body  pt-10">
-            <h1 class="card-title text-light" id="Luke"></h1>
-            <p class="card-text text-light">Former apprentice of both Obi-Wan Kenobi and Yoda, Luke Skywalker was a Jedi Knight 
-              who fought for the Alliance during the Galatic Civil War. Responsible for the destruction of the first Death Star 
-              and for bringing Anakin for the light side of the Force.</p>
-          </div>
+    <div class="row">
+      <div class="col-lg">
+        <div class="card-body  pt-10">
+          <h1 class="card-title text-light" id="Luke"></h1>
+          <p class="card-text text-light">Former apprentice of both Obi-Wan Kenobi and Yoda, Luke Skywalker was a Jedi
+            Knight
+            who fought for the Alliance during the Galatic Civil War. Responsible for the destruction of the first
+            Death Star
+            and for bringing Anakin for the light side of the Force.</p>
         </div>
-        <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/luke.png"></div>
       </div>
+      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/luke.png"></div>
     </div>
+  </div>
 
   <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-success">
-      <div class="row">
-        <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/yoda.jpg"></div>
-        <div class="col-lg">
-          <div class="card-body  pt-8">
-            <h1 class="card-title text-light" id="Yoda"></h1>
-            <p class="card-text text-light">Mentor of countless Jedi, Yoda was the wisest Jedi of all time.
-              He serverd as Grand Master of the Jedi Order and also held a seat on the Jedi Council. 
-              He was the only Jedi who sensed fear and the danger to the future of the Jedi Order in Anakin Skywalker.  
-            </p>
-          </div>
+    <div class="row">
+      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/yoda.jpg"></div>
+      <div class="col-lg">
+        <div class="card-body  pt-8">
+          <h1 class="card-title text-light" id="Yoda"></h1>
+          <p class="card-text text-light">Mentor of countless Jedi, Yoda was the wisest Jedi of all time.
+            He serverd as Grand Master of the Jedi Order and also held a seat on the Jedi Council.
+            He was the only Jedi who sensed fear and the danger to the future of the Jedi Order in Anakin Skywalker.
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container mt-5 px-0 mx-auto text-center">
-      <h5 class="w-75 text-justify text-warning font-weight-bold my-5 mx-auto" style="line-height: 1.5em">Known as protectors of peace,
-         the Jedi are a class of warriors that adhered a doctrine which favored the light side of the Force. The most iconic/powerful Jedi are:</h5>
+  <div class="container mt-5 px-0 mx-auto text-center">
+    <h5 class="w-75 text-justify text-warning font-weight-bold my-5 mx-auto" style="line-height: 1.5em">Known as
+      protectors of peace,
+      the Jedi are a class of warriors that adhered a doctrine which favored the light side of the Force. The most
+      iconic/powerful Jedi are:</h5>
+  </div>
+
+  <!--Sith-->
+  <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
+    <div class="row">
+      <div class="col-lg">
+        <div class="card-body  pt-9">
+          <h1 class="card-title text-light" id="Maul"></h1>
+          <p class="card-text text-light">Former apprentice of Darth Sidious, Maul or Darth Maul is an assassin
+            who grew in the dark side of the Force and also a skilled lightsaber duelist. Confronted both Qui-Gon Jin
+            and Obi-Wan Kenobi
+            (was only a padawan at the time) during the crisis on Naboo. </p>
+        </div>
+      </div>
+      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/maul.jpg"></div>
     </div>
+  </div>
 
-    <!--Sith-->
-    <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
-        <div class="row">
-          <div class="col-lg">
-            <div class="card-body  pt-9">
-              <h1 class="card-title text-light" id="Maul"></h1>
-              <p class="card-text text-light">Former apprentice of Darth Sidious, Maul or Darth Maul is an assassin 
-                who grew in the dark side of the Force and also a skilled lightsaber duelist. Confronted both Qui-Gon Jin and Obi-Wan Kenobi
-                 (was only a padawan at the time) during the crisis on Naboo. </p>
-            </div>
-          </div>
-          <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/maul.jpg"></div>
+  <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
+    <div class="row">
+      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/dooku.jpeg"></div>
+      <div class="col-lg">
+        <div class="card-body  pt-6">
+          <h1 class="card-title text-light" id="Dooku"></h1>
+          <p class="card-text text-light">Former apprentice of both Yoda and Darth Sidious, Dooku was a Sith Lord who
+            led the Separatists during the Clone Wars.
+            However, he was a Jedi Master once and he left the order due to the corruption in the government.
+            Confronted both Obi-Wan Kenobi and Anakin Skywalker (cutting his hand during the fight).
+          </p>
         </div>
       </div>
-  
-    <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
-        <div class="row">
-          <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/dooku.jpeg"></div>
-          <div class="col-lg">
-            <div class="card-body  pt-6">
-              <h1 class="card-title text-light" id="Dooku"></h1>
-              <p class="card-text text-light">Former apprentice of both Yoda and Darth Sidious, Dooku was a Sith Lord who led the Separatists during the Clone Wars.
-                However, he was a Jedi Master once and he left the order due to the corruption in the government.
-                Confronted both Obi-Wan Kenobi and Anakin Skywalker (cutting his hand during the fight).
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-    <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
-        <div class="row">
-          <div class="col-lg">
-            <div class="card-body  pt-8">
-              <h1 class="card-title text-light" id="Palpatine"></h1>
-              <p class="card-text text-light">Former apprentice of Darth Plagueis, Sheev Palpatine or Darh Sidious was the Dark Lord of the Sith,
-                responsible for founding the Galatic Empire after destroying the Galatic Republic from inside.
-                He was the Supreme Chancellor of the Republic Galatic before becoming the new Emperor of the Galaxy as well as being 
-                the responsible for both beginning and ending of the Clone Wars.</p>
-            </div>
-          </div>
-          <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/palpatine.jpg"></div>
-        </div>
-      </div>
-  
-    <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
-        <div class="row">
-          <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/vader.jpg"></div>
-          <div class="col-lg">
-            <div class="card-body pt-6 ">
-              <h1 class="card-title text-light" id="Vader"></h1>
-              <p class="card-text text-light">Former apprentice of Darth Sidious, Darth Vader was a Dark Lord of the Sith,
-                guilty in executing the great majority of Jedi latter in the Clone Wars.
-                He was forced to use a life-sustaining suit as the result of confronting Obi-Wan in Mustafar. </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
 
-      <footer class="page-footer font-small bg-dark">
-        <div class="footer-copyright text-center py-3 text-light">Produzido por: 
-          <a href="https://github.com/victorgirardi" class="text-warning">victorgirardi</a> &
-          <a href="https://github.com/PepeVic" class="text-warning">PepeVic</a>
+  <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
+    <div class="row">
+      <div class="col-lg">
+        <div class="card-body  pt-8">
+          <h1 class="card-title text-light" id="Palpatine"></h1>
+          <p class="card-text text-light">Former apprentice of Darth Plagueis, Sheev Palpatine or Darh Sidious was the
+            Dark Lord of the Sith,
+            responsible for founding the Galatic Empire after destroying the Galatic Republic from inside.
+            He was the Supreme Chancellor of the Republic Galatic before becoming the new Emperor of the Galaxy as well
+            as being
+            the responsible for both beginning and ending of the Clone Wars.</p>
         </div>
-      </footer>
+      </div>
+      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/palpatine.jpg"></div>
+    </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
-        <script src="../js/api.js"></script>
+  <div class="card d-flex flex-row w-75 mx-auto my-3 bg-black border border-danger">
+    <div class="row">
+      <div class="col-lg-6"> <img class="card-img-top img-thumbnail" style="width: 100%" src="../img/Jedi&Sith/vader.jpg"></div>
+      <div class="col-lg">
+        <div class="card-body pt-6 ">
+          <h1 class="card-title text-light" id="Vader"></h1>
+          <p class="card-text text-light">Former apprentice of Darth Sidious, Darth Vader was a Dark Lord of the Sith,
+            guilty in executing the great majority of Jedi latter in the Clone Wars.
+            He was forced to use a life-sustaining suit as the result of confronting Obi-Wan in Mustafar. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer font-small bg-dark">
+    <div class="footer-copyright text-center py-3 text-light">Produzido por:
+      <a href="https://github.com/victorgirardi" class="text-warning">victorgirardi</a> &
+      <a href="https://github.com/PepeVic" class="text-warning">PepeVic</a>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <script src="../js/api.js"></script>
 </body>
 
 </html>
