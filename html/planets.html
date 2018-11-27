@@ -13,7 +13,7 @@
     <link rel="icon" href="../img/favicon.png">
 </head>
 
-<body>
+<body onload="startPage(); toggleLanguagePlanets()">
 
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
         <a class="navbar-brand" href="../index.html">
@@ -34,16 +34,21 @@
                 <li class="nav-item"><a class="nav-link mx-4" href="../html/empirerebel.html">Empire x Rebels</a></li>
             </ul>
         </div>
+        <span class="navbar-text float-right">
+                <button class="btn" style="background-color:transparent" onclick="toggleLanguagePlanets()">
+                    <img src="../img/chewie.png" width="50px">
+                </button>
+              </span>
     </nav>
 
     <div class="container">
         <div class="row my-5">
             <div class="col-md-4 text-right p-5 my-auto">
-                <h3 class="text-warning">Roger</h3>
+                <h3 class="text-warning" id="Tatooine"></h3>
 
             </div>
             <div class="col-md-4">
-                <img src="../img/planets/tatooine.png" class="mx-auto my-5" width="350px">
+                <img src="../img/planets/tatooine.png" class="mx-auto my-5 w-100">
             </div>
             <div class="col-md-4 text-left p-5 my-auto">
                 <p class="text-light">Roger roger rofer rofer rofw rogfer roger roger roer roger</p>
@@ -52,11 +57,11 @@
 
         <div class="row my-5">
             <div class="col-md-4 text-right p-5 my-auto">
-                <h3 class="text-warning">Roger</h3>
+                <h3 class="text-warning" id="Hoth"></h3>
 
             </div>
             <div class="col-md-4">
-                <img src="../img/planets/hoth.png" class="mx-auto my-5" width="350px">
+                <img src="../img/planets/hoth.png" class="mx-auto my-5 w-100">
             </div>
             <div class="col-md-4 text-left p-5 my-auto">
                 <p class="text-light">Roger roger rofer rofer rofw rogfer roger roger roer roger</p>
@@ -65,11 +70,11 @@
 
         <div class="row my-5">
             <div class="col-md-4 text-right p-5 my-auto">
-                <h3 class="text-warning">Roger</h3>
+                <h3 class="text-warning" id="Endor"></h3>
 
             </div>
             <div class="col-md-4">
-                <img src="../img/planets/endor.png" class="mx-auto my-5" width="350px">
+                <img src="../img/planets/endor.png" class="mx-auto my-5 w-100">
             </div>
             <div class="col-md-4 text-left p-5 my-auto">
                 <p class="text-light">Roger roger rofer rofer rofw rogfer roger roger roer roger</p>
@@ -78,11 +83,11 @@
 
         <div class="row my-5">
             <div class="col-md-4 text-right p-5 my-auto">
-                <h3 class="text-warning">Roger</h3>
+                <h3 class="text-warning" id="Coruscant"></h3>
 
             </div>
             <div class="col-md-4">
-                <img src="../img/planets/coruscant.png" class="mx-auto my-5" width="350px">
+                <img src="../img/planets/coruscant.png" class="mx-auto my-5 w-100" >
             </div>
             <div class="col-md-4 text-left p-5 my-auto">
                 <p class="text-light">Roger roger rofer rofer rofw rogfer roger roger roer roger</p>
@@ -91,11 +96,11 @@
 
         <div class="row my-5">
             <div class="col-md-4 text-right p-5 my-auto">
-                <h3 class="text-warning">Roger</h3>
+                <h3 class="text-warning" id="Mustafar"></h3>
 
             </div>
             <div class="col-md-4">
-                <img src="../img/planets/mustafar.png" class="mx-auto my-5" width="350px">
+                <img src="../img/planets/mustafar.png" class="mx-auto my-5 w-100" >
             </div>
             <div class="col-md-4 text-left p-5 my-auto">
                 <p class="text-light">Roger roger rofer rofer rofw rogfer roger roger roer roger</p>
@@ -118,6 +123,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
+        <script src="../js/api.js"></script>
 
 </body>
 
